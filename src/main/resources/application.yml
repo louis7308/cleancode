@@ -8,7 +8,7 @@ spring:
       hibernate:
         format_sql: true
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/clean?serverTimezone=Asia/Seoul
-    username: root
-    password: sua7308!?
+    driver-class-name: ${DB_DRIVER}
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
